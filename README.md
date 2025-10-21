@@ -1,75 +1,151 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Paradise Nursery Shopping Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based e-commerce web application for browsing and purchasing houseplants. Built with React and Redux for state management.
 
-## Available Scripts
+## 🌿 Project Overview
 
-In the project directory, you can run:
+Paradise Nursery is a front-end shopping application that allows users to browse a variety of houseplants, add them to a shopping cart, and manage their selections before checkout. The application demonstrates modern React development practices with Redux for centralized state management.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Landing Page
+- Attractive background image
+- Company information and branding
+- Call-to-action button to start shopping
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Product Listing Page
+- Display of 6+ unique houseplants
+- Plants organized into 3+ categories
+- Each plant displays:
+  - Thumbnail image
+  - Plant name
+  - Price
+  - Add to Cart button
+- Dynamic button states (disabled after adding to cart)
 
-### `npm test`
+### Shopping Cart Page
+- Real-time cart summary with total items and cost
+- Detailed view of each plant in cart:
+  - Thumbnail image
+  - Plant name
+  - Unit price
+  - Quantity controls (increase/decrease)
+  - Delete option
+- Continue Shopping button
+- Checkout button (Coming Soon)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Header Navigation
+- Present on all main pages
+- Shopping cart icon with live item count
+- Navigation between pages
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** - UI component library
+- **Redux** - State management
+- **React Router** - Navigation and routing
+- **CSS3** - Styling and layouts
+- **JavaScript (ES6+)** - Core programming language
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/sharvavit/paradise-nursery.git
+```
 
-### `npm run eject`
+2. Navigate to the project directory:
+```bash
+cd paradise-nursery
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install dependencies:
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open your browser and visit:
+```
+http://localhost:3000
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
 
-## Learn More
+```
+paradise-nursery/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── LandingPage.js
+│   │   ├── ProductList.js
+│   │   ├── ShoppingCart.js
+│   │   └── Header.js
+│   ├── redux/
+│   │   ├── store.js
+│   │   ├── cartReducer.js
+│   │   └── actions.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Redux State Management
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application uses Redux to manage the shopping cart state, including:
+- Adding items to cart
+- Removing items from cart
+- Updating item quantities
+- Calculating total price and item count
 
-### Code Splitting
+## 🚀 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` - Runs the app in development mode
+- `npm build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm eject` - Ejects from Create React App (one-way operation)
 
-### Analyzing the Bundle Size
+## 📝 Assignment Requirements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project fulfills the following requirements:
+- ✅ GitHub repository (public, with Redux files)
+- ✅ Landing page with background, company info, and CTA button
+- ✅ Product listing with 6+ plants in 3+ categories
+- ✅ Header with cart icon and navigation
+- ✅ Shopping cart with full CRUD operations
+- ✅ Dynamic cart calculations and updates
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This is an academic project. If you'd like to suggest improvements:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-### Advanced Configuration
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Sharvavit**
+- GitHub: [@sharvavit](https://github.com/sharvavit)
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is created for educational purposes as part of a React/Redux course assignment.
 
-### `npm run build` fails to minify
+## 🙏 Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# paradise-nursery
-Paradise Nursery Shopping Application - React &amp; Redux
->>>>>>> 8aac0ae6a8b5b9650c94c806ace359d3f4bc706e
+- Plant images sourced from [mention your source]
+- Inspired by modern e-commerce applications
+- Built as part of React & Redux coursework
+
+---
+
+**Note**: The checkout functionality displays "Coming Soon" as this is a front-end demonstration project.
